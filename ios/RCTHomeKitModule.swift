@@ -5,6 +5,13 @@ class HomeKitModule: RCTEventEmitter, HMHomeManagerDelegate, HMAccessoryBrowserD
   var homeManager = HMHomeManager()
   let accessoryBrowser = HMAccessoryBrowser()
   
+  @objc override static func requiresMainQueueSetup() -> Bool {
+    return true
+  }
+  override func supportedEvents() -> [String]! {
+    return ["findNewAccessory", "removeNewAccessory", "characteristicNotify"]
+  }
+  
   @objc(addAndSetupAccessories:withResolver:withRejecter:)
   func addAndSetupAccessories(name: String, resolve: @escaping(RCTPromiseResolveBlock), reject: @escaping(RCTPromiseRejectBlock)) -> Void {
     
