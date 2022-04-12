@@ -1,9 +1,8 @@
 import HomeKit
 
 @objc(HomeKitModule)
-class HomeKitModule: RCTEventEmitter, HMHomeManagerDelegate, HMAccessoryBrowserDelegate, HMAccessoryDelegate {
+class HomeKitModule: RCTEventEmitter {
   var homeManager = HMHomeManager()
-  let accessoryBrowser = HMAccessoryBrowser()
   
   @objc override static func requiresMainQueueSetup() -> Bool {
     return true

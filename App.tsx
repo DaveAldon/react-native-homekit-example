@@ -8,8 +8,19 @@ const App = () => {
       <TouchableOpacity
         onPress={async () => {
           await HomeKitModule.addAndSetupAccessories('');
+        }}
+        style={{
+          backgroundColor: 'gray',
+          padding: 10,
+          margin: 10,
+          borderRadius: 10,
         }}>
-        <Text>Add HomeKit Device</Text>
+        <Text
+          style={{
+            color: 'white',
+          }}>
+          + Add HomeKit Device
+        </Text>
       </TouchableOpacity>
     </SafeAreaView>
   );

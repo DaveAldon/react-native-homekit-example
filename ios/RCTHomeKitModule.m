@@ -1,4 +1,4 @@
-#import <React/RTCBridgeModule.h>
+#import <React/RCTBridgeModule.h>
 #import <HomeKit/HomeKit.h>
 #import "React/RCTEventEmitter.h"
 

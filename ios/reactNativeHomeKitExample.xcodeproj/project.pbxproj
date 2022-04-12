@@ -13,7 +13,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		155555702804C6F000CE47CF /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1555556F2804C6F000CE47CF /* HomeKit.framework */; };
-		155555732804CD1C00CE47CF /* RTCHomeKitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155555722804CD1C00CE47CF /* RTCHomeKitModule.swift */; };
+		155555732804CD1C00CE47CF /* RCTHomeKitModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155555722804CD1C00CE47CF /* RCTHomeKitModule.swift */; };
 		155555752804CD8400CE47CF /* RCTHomeKitModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 155555742804CD8400CE47CF /* RCTHomeKitModule.m */; };
 		7699B88040F8A987B510C191 /* libPods-reactNativeHomeKitExample-reactNativeHomeKitExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-reactNativeHomeKitExample-reactNativeHomeKitExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		1555556E2804C6F000CE47CF /* reactNativeHomeKitExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = reactNativeHomeKitExample.entitlements; path = reactNativeHomeKitExample/reactNativeHomeKitExample.entitlements; sourceTree = "<group>"; };
 		1555556F2804C6F000CE47CF /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		155555712804CD1B00CE47CF /* reactNativeHomeKitExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reactNativeHomeKitExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		155555722804CD1C00CE47CF /* RTCHomeKitModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCHomeKitModule.swift; sourceTree = "<group>"; };
+		155555722804CD1C00CE47CF /* RCTHomeKitModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTHomeKitModule.swift; sourceTree = "<group>"; };
 		155555742804CD8400CE47CF /* RCTHomeKitModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTHomeKitModule.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-reactNativeHomeKitExample-reactNativeHomeKitExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeHomeKitExample-reactNativeHomeKitExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-reactNativeHomeKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeHomeKitExample.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeHomeKitExample/Pods-reactNativeHomeKitExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				155555742804CD8400CE47CF /* RCTHomeKitModule.m */,
-				155555722804CD1C00CE47CF /* RTCHomeKitModule.swift */,
+				155555722804CD1C00CE47CF /* RCTHomeKitModule.swift */,
 				13B07FAE1A68108700A75B9A /* reactNativeHomeKitExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* reactNativeHomeKitExampleTests */,
@@ -426,7 +426,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				155555752804CD8400CE47CF /* RCTHomeKitModule.m in Sources */,
-				155555732804CD1C00CE47CF /* RTCHomeKitModule.swift in Sources */,
+				155555732804CD1C00CE47CF /* RCTHomeKitModule.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
