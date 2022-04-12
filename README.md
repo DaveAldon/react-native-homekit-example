@@ -1,5 +1,9 @@
 ## How to Combine HomeKit with React Native in 10 Minutes
 
+<p>
+<img width="100%" src="./resources/title.png">
+</p>
+
 Whether you’re developing the next home automation app or a new hardware device for your home, if you want it integrated with HomeKit and Siri, the developer resources out there are pretty slim. Apple provides their API docs, which are a great starting point. However, there’s a huge gray area if you don’t already understand how services, accessories, and characteristics work. And to make matters worse, if you want to do all of this in React Native, you’ll find neither official documentation, nor updated/documented 3rd party libraries.
 
 With no easy tutorials, drag-and-drop libraries, or hand holding, I took the plunge. In this post, I’m sharing what I learned over a long weekend, so that it only takes you 10 minutes.
