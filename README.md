@@ -238,8 +238,6 @@ And then verify that the device was added by checking the official Home app on y
 
 This post shows the starting point and how to get the hard parts of HomeKit + React Native integration out of the way. In the future, we can build off of this topic and delve deeper into more advanced accessory management, characteristic updates, zone/room handling, filtering on manufacturers, and more!
 
-If you have any questions, feel free to raise an issue in this repo. You can also join [Bravo LT’s Discord server](https://discord.gg/qt6WTfyZCd) and chat with me about HomeKit!
-
 ### Troubleshooting
 
 In this repo I use a `patch-package` patch for React Native to unset `npm_config_prefix` due to M1 build issues. If you're using an Intel Mac and are having build issues, try disabling the patch first.
