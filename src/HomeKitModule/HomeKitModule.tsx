@@ -1,4 +1,4 @@
-import {NativeModules} from 'react-native';
+import { NativeModules } from "react-native";
 
 export interface Characteristic {
   type: string;
@@ -38,14 +38,14 @@ export interface Home {
   name: string;
   primary: boolean;
   rooms: Array<Room>;
-  accessories: Array<Accessory>;
+  accessories: Array<String>;
   zones: Array<Zone>;
 }
 
 type HomeKitType = {
-  addAndSetupAccessories(name: string): Promise<Home>;
+  addAndSetupAccessories(name: String): Promise<Home>;
 };
 
-const {HomeKitModule} = NativeModules;
+const { HomeKitModule } = NativeModules;
 
 export default HomeKitModule as HomeKitType;

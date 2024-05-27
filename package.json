@@ -7,7 +7,6 @@
     "ios-cli": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "clean-ibuild": "cd ios && rm -rf Pods Podfile.lock && bundle exec pod deintegrate && bundle exec pod setup && bundle exec pod install && cd ..",
     "clean-ibuild-all": "sudo rm -rf ~/Library/Developer/Xcode/DerivedData/* && npm run clean-ibuild",
     "intel-pod-install": "cd ios && arch -x86_64 pod install && cd ..",
