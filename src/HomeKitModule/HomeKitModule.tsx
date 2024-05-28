@@ -43,7 +43,7 @@ export interface Home {
 }
 
 type HomeKitType = {
-  addAndSetupAccessories(name: String): Promise<Home>;
+  addAndSetupAccessories(name: string): Promise<Home>;
 };
 
 const { HomeKitModule } = NativeModules;

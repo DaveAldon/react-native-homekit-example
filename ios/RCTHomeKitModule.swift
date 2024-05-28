@@ -14,11 +14,11 @@ class HomeKitModule: RCTEventEmitter {
 
   @objc(addAndSetupAccessories:withResolver:withRejecter:)
   func addAndSetupAccessories(name: String, resolve: @escaping (RCTPromiseResolveBlock), reject: @escaping (RCTPromiseRejectBlock)) {
-    homeManager.homes[0].addAndSetupAccessories(completionHandler: { error in
+    homeManager.homes[1].addAndSetupAccessories(completionHandler: { error in
       if let error = error {
         reject("error", error.localizedDescription, error)
       } else {
-        let home = self.homeManager.homes[0]
+        let home = self.homeManager.homes[1]
         var homeData = [String: Any]()
         homeData["name"] = home.name
         homeData["isPrimary"] = home.isPrimary
