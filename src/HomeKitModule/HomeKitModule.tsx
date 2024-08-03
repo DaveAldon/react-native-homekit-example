@@ -19,9 +19,7 @@ export interface Service {
 
 export interface Accessory {
   name: string;
-  bridged: boolean;
-  room?: Room;
-  services: Array<Service>;
+  isOn: string | boolean;
 }
 
 export interface Zone {
@@ -31,19 +29,21 @@ export interface Zone {
 
 export interface Room {
   name: string;
-  accessories: Array<Accessory>;
+  accessories: Accessory[];
 }
 
 export interface Home {
   name: string;
   primary: boolean;
   rooms: Array<Room>;
-  accessories: Array<String>;
+  accessories: Accessory[];
   zones: Array<Zone>;
 }
 
 type HomeKitType = {
   addAndSetupAccessories(name: string): Promise<Home>;
+  getHomeData(name: string): Promise<Home>;
+  setDeviceState(deviceName: string, state: number): Promise<void>;
 };
 
 const { HomeKitModule } = NativeModules;
